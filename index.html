@@ -8,28 +8,101 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Crystal Collector Game</title>
   
-    <!--Image tag -->
-    <a href="https://www.somesite.com"><imgage src="https://www.example.com/logo.jpg" alt="Logo"></a>
+
+        <!--added music and nav button-->
+        <link rel="audio" href="assets/audio/loop1.mp3">
+
+        <style>
+          nav#nav1{ margin-top: 24px; }
+          nav#nav1 > a{ background:rgb(119, 166, 211); color:#000; padding:10px; text-decoration:none; border-radius:5px; font-family:"Arial Black", Gadget, sans-serif; }
+          nav#nav1 > a:hover{ background: #40428d; }
+          nav#nav1 > a:active{ background: #cfabcf; }
+          </style>
+          <script>
+          var loop = new Audio();
+          loop.src = 'assets/audio/loop1.mp3';
+          </script>
 
 </head>
 
 
-  <body>
+    <body>
+
+<body style = background:url("https://marketing.gaia.com/wp-content/uploads/article-migration-image-how-to-work-with-crystals-768x432.png   ")></style>
+
+<center>
+<!--added mp3 to body -->
+<nav id="nav1">
+  <a href="#" onmousedown="loop.play()">Game Music</a>
+ 
+</nav>
 
 
-    <h1>Hello, world!</h1>
 
+</center>
+      <div id="all">
+      <div class="card card-cascade wider reverse my-4">
+      <div class="card-body text-center">
+      <h2 class="card-title"><strong>Collect Crystals Game</strong></h2>
+      </div>
+      </div>
 
+      <center>
+          <div class="row">
+              <div class="col-sm-3">
+                      </div>
+              <div class="col-sm-6">
+                      <div class="card">
+                          <br>
+                          <div style="display: inline-block">
+                              <button id='button1' type='button' class='btn btn-secondary'><img src="assets/images/crystal1.png" height="25px"></button>
+                              <button id='button2' type='button' class='btn btn-secondary'><img src="assets/images/crystal2.png" height="25px"></button>
+                              <button id='button3' type='button' class='btn btn-secondary'><img src="assets/images/crystal3.png" height="25px"></button>
+                              <button id='button4' type='button' class='btn btn-secondary'><img src="assets/images/crystal4.png" height="25px"></button>
+                              <br>
+                              <div id="random_num"></div>
+                          </div>
+                         
+                          <br>
+                          <div style="display: inline-block"></div>
+                              <div id="keys"><h5>Your total score so far is: <input id="whichkey" value="" maxlength="4" size="3"></input></h5></div>
+                      </div>
+  
+  
+                      <br>
+                          <div id="wins"><h6>Wins:</h6></div>
+                          <div id="loses"><h6>Loses:</h6></div>
+  
+  
+  
+  
+                  </div>
+              </div>
+                  <div class="col-sm-3">
+              </div>
+              <br>
+      <div id="message"></div>
+          </div>
+          
+      </center>
+  
+<br>  <br> <br> <br> <br>
+ <!-- FOOTER -->
+<center>
+ <footer class="sticky-footer">
+  <p class=" footer-style">
+  <br> <br> <br><br>
+  <strong>© Copyright Christine Munoz - Crystal Game</strong> <br>
+  <a href="https://github.com/christineZ5" target="_blank">GitHub Repo</a>
+  |
+  <a href="https://github.com/christineZ5" target="_blank">Portfolio</a>
+  </p>
 
+  </footer> 
 
-
-
-
-
-
-
+</center>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
